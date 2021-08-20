@@ -15,6 +15,7 @@ name (of existing solution): [keybase, pgp, oauth etc]
 underlying tech: [blockchain, keypairs, etc]
 used-by: [fediverse, ssb, twitter, etc]
 approx num users: [+/- order of magnitude]
+how-to-use: [can it be used by other stacks/platforms?  how?]
 reasons: [for use/not use]
 requests: [what would be good to do next with this method]
 ``` 
