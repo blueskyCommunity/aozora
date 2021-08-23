@@ -1,0 +1,33 @@
+identity means
+
+ - gain access to resources that are unique to me
+ - be able to post or take actions that can be identified as coming from me
+ - others can discover or refer to me and my actions
+
+can rely on
+
+  - attestations from trusted source (OAuth) which is logged into w password
+  - keypair (signed messages can be verified with public key)
+       - pubkey may be available on public blockchain or trusted source
+  - assets (device id, 2FA)
+  - social graph validation (3FA)
+
+
+For an app to use decentralized identity, a user arrives at and wants to login or create a post
+   - is there a simple method to lookup the pubkey similar to OAuth?
+   - can we combine trusted source and blockchain verifiers?
+   - can we include standard methods for adding 2FA to verify decentralized identities?
+
+
+Once identity is possible, reputation layers may be added on top such as 
+    KyC - proof of a legal specific identity, or 
+    PoH - proof of humanity
+
+
+codelab - integration of existing stack into an app to provide identity
+
+ - how does activitypub do it?
+ - how does matrix do it?
+ - how does gun/iris do it?
+
+can we bridge across any of these?
