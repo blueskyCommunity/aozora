@@ -1,6 +1,6 @@
-## Getting Started
+# Getting Started
 
-** Goals, scope and literature **
+## Goals, scope and literature 
 
 The original Goals and Scope document that Twitter vetted has now been added to our repo:
 https://gitlab.com/bluesky-community/flow/-/blob/main/original-goals-and-scope.md
@@ -8,7 +8,7 @@ https://gitlab.com/bluesky-community/flow/-/blob/main/original-goals-and-scope.m
 As well as the original suggested readings, as referenced here
 https://discord.com/channels/867838494897078302/877657223902425158/880523332552917032
 
-** How To Contribute **
+## How To Contribute
 
 1) The simplest first way to contribute is to try out code or apps from blueskycommunity.net, and report in #in-the-wild!  
 
@@ -20,6 +20,6 @@ https://discord.com/channels/867838494897078302/877657223902425158/8805233325529
 You can make offers here, and plan them when someone is interested in joining you.
 
 
-** Structure **
+## Structure
 
 The idea is that discussion happens in the discord, and design, docs or key links that crystalize out should be checked into this repo in the corresponding directory.
