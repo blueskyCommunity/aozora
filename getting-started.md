@@ -12,7 +12,7 @@ You can also read the [original literature list](https://gitlab.com/bluesky-comm
 
 2) Become a Topic editor!  Maintain Markdown docs pinned in each channel with key links (ask a moderator for perms)
 
-3) Join a Working Group - check out the discussions in the discord, or look through [working groups](https://gitlab.com/bluesky-community/flow/-/tree/main/WORKING_GROUPS)
+3) Join a Working Group - check out the discussions in the discord, or look through [working groups](https://gitlab.com/bluesky-community/flow/-/tree/main/WORKING_GROUPS).  You can [form your own group](https://discord.gg/UU4jBPKBm8) as well!
 
 4) Pop in to a discussion or offer to sync up - see the [bluesky-community circle](https://join.whatscookin.us/circle/bluesky-community)
 You can make offers here, and plan them when someone is interested in joining you.
