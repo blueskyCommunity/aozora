@@ -14,16 +14,11 @@ https://discord.com/channels/867838494897078302/877657223902425158/8805233325529
 
 2) Become a Topic editor!  Maintain Markdown docs in each channel with key links, and check them periodically into our gitlab (ping me for perms)
 
-3) Join a Working Group  (see below)
+3) Join a Working Group - check out the discussions in the discord, or look through [working groups](https://gitlab.com/bluesky-community/flow/-/tree/main/WORKING_GROUPS)
 
 4) Pop in to a discussion or offer to sync up - see https://join.whatscookin.us/circle/bluesky-community 
 You can make offers here, and plan them when someone is interested in joining you.
 
-** Working Groups **
-
-Look under the WORKING GROUPS header in the discord to see what areas people are working on, or examine the checked in documents in the repo under [working groups](https://gitlab.com/bluesky-community/flow/-/tree/main/WORKING_GROUPS) 
-
-Use Cases is an essential one that does not require heavy tech background.
 
 ** Structure **
 
