@@ -21,7 +21,7 @@ You can make offers here, and plan them when someone is interested in joining yo
 
 ** Working Groups **
 
-Look under the WORKING GROUPS header in the discord to see what areas people are working on.  
+Look under the WORKING GROUPS header in the discord to see what areas people are working on, or examine the checked in documents in the repo under [working groups](https://gitlab.com/bluesky-community/flow/-/tree/main/WORKING_GROUPS) 
 
 Use Cases is an essential one that does not require heavy tech background.
 
