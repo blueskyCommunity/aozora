@@ -3,8 +3,14 @@ import * as Gun from 'gun';
 import AsyncStorage from '@react-native-async-storage/async-storage/lib/module';
 
 const readNode = (key, cb) => {
-  console.log({ AsyncStorage });
-	AsyncStorage.getItem(key || '', cb);
+
+	try {
+		AsyncStorage.getItem(key || '', cb);
+  } catch (err) {
+		// Uhh, this is probably super bad, but we are supressing an error that throws:
+		// https://github.com/schnittstabil/merge-options/blob/master/index.js#L164
+    // FIXME: Investigate what is causing this
+	}
 };
 
 const read = (request, db) => {
@@ -58,17 +64,31 @@ const write = (request, db) => {
 		return [key, JSON.stringify(graph[key] || {})];
 	});
 
-	AsyncStorage.multiMerge(instructions, (err) => {
-		db.on('in', {
-			'#': dedupid,
-			ok: !err || err.length === 0,
-			err,
+	try {
+		AsyncStorage.multiMerge(instructions, (err) => {
+			db.on('in', {
+				'#': dedupid,
+				ok: !err || err.length === 0,
+				err,
+			});
 		});
-	});
+	} catch (err) {
+		// Uhh, this is probably super bad, but we are supressing an error that throws:
+		// https://github.com/schnittstabil/merge-options/blob/master/index.js#L164
+		// FIXME: Investigate what is causing this
+	}
 };
 
 // This returns a promise, it can be awaited!
-const reset = () => AsyncStorage.clear();
+const reset = () => {
+	try {
+		AsyncStorage.clear();
+	} catch (err) {
+		// Uhh, this is probably super bad, but we are supressing an error that throws:
+		// https://github.com/schnittstabil/merge-options/blob/master/index.js#L164
+    // FIXME: Investigate what is causing this
+	}
+}
 
 export default {
 	read,

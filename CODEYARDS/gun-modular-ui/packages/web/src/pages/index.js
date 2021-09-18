@@ -83,7 +83,7 @@ const Home = () => {
             <Box>
               <Box>
                 <Text as={TextInput} fontSize={20} style={null} placeholder="Username" onChangeText={(username) => setUsername(username)} value={username} />
-                <Text as={TextInput} placeholder="Password" onChange={({ target: { value: password } }) => setPassword(password)} value={password} />
+                <Text as={TextInput} placeholder="Password" onChangeText={(password) => setPassword(password)} value={password} />
                 <Button onClick={doSignin}>
                   <Text>Sign in</Text>
                 </Button>
