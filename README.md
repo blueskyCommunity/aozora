@@ -1,4 +1,4 @@
-# flow
+# bluesky community repo
 
 Markdown docs per discord channel, working group and topic files
 
@@ -50,7 +50,22 @@ Please upload other documents that are needed to support the goals.  If you find
 
 This area does not require repo pages, as each app/protocol generally has its own external home page that can be put in the channel description.
 
+## ONBOARDING
 
+What type of role or category do you fall into? This will help you take an action that is helpful to you and everyone:
+
+User Story:
+
+ - I want to pitch my project/protocol to the BlueSky community
+   - Submit yourself to the next(s) panel discussion.
+   - Submit a CodeLab/other tutorial
+ - I am an intern looking to help teams that align with my values
+   - Look at this list of project summaries and try their tutorial
+     - Try another, or join!
+ - I do not have time, I no longer have ego attached to projects, I’m an expert to help consult and give war stories
+   - Personal backchannels with them and connecting teams.
+ - I want to hear nuanced discussions around important design decisions/ features related to decentralized social networks.
+   - Submit your topic/ potential panelists for the next panel discussion.
 
 
 ## Getting started with Gitlab

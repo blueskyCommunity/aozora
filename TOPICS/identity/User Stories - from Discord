@@ -1,0 +1,14 @@
+Submitted by marknadal — 08/03/2021
+1. user clicks on URL/search bar, types "Elon Musk"
+2. browser emits phrase to navigator.registeredProtocolHandlers (like it already does now)
+3. it MUST not go to a domain, it MUST set strict COEP, COOP, CSP, etc.
+4. browser receives responses from each "protocol" (pretend Google, GUN, Etherscan, DDG, IPLD, your contact lists, Iris...)
+6. browser MUST enforce (3) security policies on any HTML responses (this'll strip most JS/CSS), JSON is safe, etc.
+The "real" Bob (ahem, Elon Musk) is either:
+(A) if the user has never saved an "Elon Musk" to their contact list, it is the highest overlapping top ranked result across all responses downweighted against uncertainty constrained by total population size (see the paper for explainer). So "https://twitter.com/elonmusk" seems to be the most attested, validated, "identity" for Elon Musk.
+(B) if the user has saved some other response, a "remember me" for that search, pinned data, or had added an "Elon Musk" to their contact list, it would be that one instead. Say (760)-321-4475 or maybe ~fmJdyrldfQnXSD4rTE5XwxfeZU8xO0G6d6wEpJek1Fk.u36GZRp4I0wSDHFyGube8VAYZAD3flRt_ZwKh18IIEc or maybe #dde1909fa37b4.
+
+Now the fun part. Replace (1) with user types in a comment/reply box and begins to write "hey @elonmusk"
+The same thing happens! It defaults to autocomplete to the "real" Elon Musk, but it also shows you a preview list of other options can select.
+(as in, the app would auto-link the phrase to twitter for instance, and ideally know how to copy your message onto Twitter via API calls or whatever - I hate custom integration logic tho, and lots of sites try to ban this too, so maybe something like mask is a better approach)
+(wikipedia profile seems to be #2, with twitter as #1. Note: If #1 has his public key in his profile, that'd be useful to scrape into the contact list)

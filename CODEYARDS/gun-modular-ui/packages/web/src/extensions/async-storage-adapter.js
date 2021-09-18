@@ -3,7 +3,6 @@ import * as Gun from 'gun';
 import AsyncStorage from '@react-native-async-storage/async-storage/lib/module';
 
 const readNode = (key, cb) => {
-
 	try {
 		AsyncStorage.getItem(key || '', cb);
   } catch (err) {
