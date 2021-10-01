@@ -10,6 +10,8 @@ As an app developer, I want to know that a user has given me permission to post 
 
 As an app developer, I want to know that a user corresponds with a specific entity or account that has attestations of credibility
 
+(in a federated world, the app developer could be exchanged with a server administrator)
+
 
 
 
