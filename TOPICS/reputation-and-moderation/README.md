@@ -24,3 +24,5 @@ Articles:
 - Jane Im, et al.: [Yes: Affirmative Consent as a Theoretical Framework for Understanding and Imagining Social Platforms](https://dl.acm.org/doi/10.1145/3411764.3445778)
 - EFF [sounding off](https://www.eff.org/deeplinks/2021/08/apples-plan-think-different-about-encryption-opens-backdoor-your-private-life) on the new apple CP detection AI and it's [shortcomings](https://twitter.com/kennwhite/status/1427963087848714242)
 - Casey Newton, [What Twitter should copy from Tindr](https://www.platformer.news/p/what-twitter-should-copy-from-tinder), 8/19/21
+- https://future.a16z.com/reputation-based-systems/ 2-token framework
+ 
