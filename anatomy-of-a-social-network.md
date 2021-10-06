@@ -45,7 +45,18 @@ for each application to innovate on top of the common protocols.
 Standardise where we see value in standers and compete everywhere else.
  
 # Layers
- 
+* Durability layer
+  * The policies around ephemerality and permanence of content
+* Document layer
+  * The schemata for content in the network.
+  * The descriptions of valid documents in a network or between networks
+* Channels layer
+  * The information retrieval technologies to map document identifies to
+    documents.
+  * The information retrieval technologies to search documents
+* Identifiers layer
+  * The schemata for document identifiers
+
 ## Durability
 There's not much to say here other then the fact that a social network is
 based on the sharing of content so that content must be stored somewhere.
@@ -105,7 +116,18 @@ The documents may be the truth of the Social network
 but without a way to discover relevant documents are not useful.
 There are two main classes of content
 Channels authoritative and non-authoritative
- 
+
+
+#### **Note**
+Authoritative and non-authoritative here being the
+information security concept of authoritative meaning
+that the author is known. If a document is signed by a particular key
+or provided by a particular domain that binding is authoritative but
+has no impact on whether the information is true or trustworthy.
+Only the author is being asserted no more.
+https://en.wikipedia.org/wiki/Information_security
+
+
 ### Authoritative
 An authoritative channel is one where we learn attributes about the document
 solely from the source of the document.
@@ -149,6 +171,11 @@ they only make sense if we have identifiers.
 "User U18 commented on post P36 " only makes sense if we have a way to identify
 user U18 and post P36 we must have some symbolic representation of entities in
 the system.
+
+In order to be able to re-post, react to, comment on, abuse report,
+or talk about a document in any way each document will need
+to have its own identifier.
+
 In a centralised system like twitter or facebook they can just assign unique IDs
 using a unique column in a database.
 For systems like email we partition the space with "user@example.com"
@@ -174,7 +201,3 @@ with the others. while this is likely to follow the path of the internet and
 have one or a small number of dominant protocols at any one layer
 the flexibility that comes with decomposition makes it far more likely that
 we get a truly interoperable seasonable future of social networking
-* Durability layer
-* Document layer
-* Channels layer
-* Identifiers layer
