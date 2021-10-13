@@ -12,6 +12,6 @@ As an app developer, I want to know that a user corresponds with a specific enti
 
 (in a federated world, the app developer could be exchanged with a server administrator)
 
-
+As a social-media user, I want to block an individual whom I consider toxic "globally", i.e. on all the places where they publish.  Conversely, I want to globally follow someone I admire. Furthermore, whether blocking or following, I want this to apply to new social-media identities for the individual even if they're created after my initial block/follow.
 
 
