@@ -56,7 +56,7 @@ Zooko Wilcox-O'Hearn's triangle is the CAP theorem as applied to names.
 * __Mutually exclusive__
   * Zooko called this **Secure**
   * CAP theorem called this **Consistency**
-  * No to identities can be the same
+  * No two identities can be the same
   * If a name identifies one entity it does not identify any other entity
   * if id(a) = id(b) then a = b
   * this can be accomplished with
