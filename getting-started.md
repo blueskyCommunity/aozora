@@ -8,7 +8,7 @@ You can also read the [original literature list](https://gitlab.com/bluesky-comm
 
 ## How To Contribute
 
-1) The simplest first way to contribute is to try out code or apps from [blueskycommunity.net](blueskycommunity.net), and report in [#in-the-wild](https://discord.gg/9KzA2frh6d)!  
+1) The simplest first way to contribute is to try out code or apps from [blueskycommunity.net](https://blueskycommunity.net), and report in [#in-the-wild](https://discord.gg/9KzA2frh6d)!  
 
 2) Become a Topic editor!  Maintain Markdown docs pinned in each channel with key links (ask a moderator for perms)
 
