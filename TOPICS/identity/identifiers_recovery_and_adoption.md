@@ -47,15 +47,15 @@ TL;DR: we need better DIDs/DID integration + standardization for mass adoption t
 *****10/25/21*****
 
 ### How will we form a consensus on a Bluesky identifier?
--It’s more about creating interoperability between identifiers from different online communities.
--Safe answer: use URI but don’t close door to future directions
+ * It’s more about creating interoperability between identifiers from different online communities.
+ * Safe answer: use URI but don’t close door to future directions
 
-What does a Bluesky identifier even represent?
+### What does a Bluesky identifier even represent?
 
 @AaronDGoldman: 3 “flavors” of names - address (unique, chosen), fingerprints (local, unique), tags (chosen, local)
 
 ### How do I link all my accounts?
--Webfinger support from social media providers
--‘behind the scenes’ identity/address OR make a document linking accounts and share on protocol (document could live on IPFS or anywhere accessible with URL)
--user stores own private keys OR delegates to service
--QR code-DID? (Ex: snap codes)
+ * Webfinger support from social media providers
+ * ‘behind the scenes’ identity/address OR make a document linking accounts and share on protocol (document could live on IPFS or anywhere accessible with URL)
+ * user stores own private keys OR delegates to service
+ * QR code-DID? (Ex: snap codes)
