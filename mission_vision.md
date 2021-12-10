@@ -29,3 +29,12 @@ Even with unlimited funding, there are deep problems that get in the way of mome
  - **Empowering one's freedom can conflict with preserving another's Privacy**. The ability to use any device anywhere in the world, online or offline, with the same local-first experience requires enormous battle testing. We should not inject rent-seeking centralized servers as a dependency. Yet scaling peer-to-peer connections globally without bottleneck, latency, or hiccup, while still being easy and accessible, is dauntlessly ambitious. But so was building aqueducts, roads, and pipes. We do this for our progeny because our grandparents did it for us, not the pyramid hell of one man's monument.
 
 ## Submission 2
+
+To drive adoption of decentralized technologies that
+
+  - enable users to communicate to others regardless of the ownership of the storage and network where the message may be stored, or where it originates
+
+  - enable users to adopt a long-lived pseudnymous identity which only they can read messages directed to and write messages from; and to retain that identity regardless of the ownership of any particular domain name or storage mechanism
+
+  - enable users to choose how they view the "feed" of messages, by using software or service providers of their choice
+  
