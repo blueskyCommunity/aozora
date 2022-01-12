@@ -1,6 +1,6 @@
 ## Assertions and Recommendations as a Reputation Feed
 
-Given a decentralized system in which message authors have verified long-term identities, a feed of assertions or 'meta' messages should be useful to build a reputation or credibility system, that can itself participate in the feed.  See also [reputation user stories](/design/user_stories/reputation_user_stories_beyond_blocklists.md)
+Given a decentralized system in which message authors have verified long-term identities, a feed of assertions or 'meta' messages should be useful to build a reputation or credibility system, that can itself participate in the feed.  See also [reputation user stories](/TOPICS/reputation-and-moderation/reputation_user_stories_beyond_blocklists.md)
 
 ### Reputation 'Staking'
 
