@@ -6,6 +6,14 @@ Concerns have been brought up over performance
 
 This document is to capture in a structured way the points raised and any benchmarking or proofs of perforamance in the wild
 
+## Conversation Participants / Interested Parties
+
+- @WClayFerguson#4667
+- @AaronDGoldman#8819
+- @Matthew | Streamr 🐺#1614
+- @ianopolous#1330
+- @mogs#3920
+
 ## Benefits of using IPFS in a decentralized public conversation
 
 ### How would we envision it being used? 
