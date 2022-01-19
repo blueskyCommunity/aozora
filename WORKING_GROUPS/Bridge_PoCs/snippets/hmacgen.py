@@ -3,6 +3,11 @@ import hmac
 import hashlib
 import requests
 import json
+import os
+
+REGISTRATION_SHARED_SECRET = os.environ.get('REGISTRATION_SHARED_SECRET')
+USERNAME = os.environ.get('USERNAME')
+PASSWORD = os.environ.get('PASSWORD')
 
 nonce_request = requests.get("https://matrix.blueskycommunity.net/_synapse/admin/v1/register")
 nonce = nonce_request.json()["nonce"]
@@ -10,7 +15,7 @@ nonce = nonce_request.json()["nonce"]
 def generate_mac(nonce, user, password, admin=False, user_type=None):
 
     mac = hmac.new(
-      key=b"<server secret>",
+      key=b"{}".format(REGISTRATION_SHARED_SECRET),
       digestmod=hashlib.sha1,
     )
 
@@ -30,7 +35,7 @@ def generate_mac(nonce, user, password, admin=False, user_type=None):
 my_mac = generate_mac(nonce, "tuna", "Naruto7", True)
 
 headers = {"Content-Type": "application/json"}
-data = {"nonce": nonce, "username": "<username>", "password": "<pw>", "admin": "true", "mac": my_mac}
+data = {"nonce": nonce, "username": USERNAME, "password": PASSWORD, "admin": "true", "mac": my_mac}
 register = requests.post("https://matrix.blueskycommunity.net/_synapse/admin/v1/register", headers=headers, data=json.dumps(data))
 print(register.status_code, register.text)
 
