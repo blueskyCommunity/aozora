@@ -80,6 +80,14 @@ __DIDs__ (W3C spec for Decentralized Identifiers v1.0)
     - Blockchain Wallet Address
 - Examples:
 
+__FEDERATED SERVICE__
+    : A service of a specific type that shares its data with services of the same type in a peer-to-peer architecture such that a user of the service can interact with a user of another service of the same type as though they are both on the same service.
+- Related Terms:
+  - Fediverse
+- Examples:
+  - A matrix node
+  - A mastdodon node
+
 __FIREWALL BYPASS__
   : Connect computers that are behind one way firewalls and NATs.
 
@@ -114,6 +122,14 @@ __PUBLIC LEDGER (PLT)__
      
 __SELF CERTIFYING KNOWLEDGE GRAPH__
   : A graph where the nodes are linked by cryptographic hashes or signatures.
+
+__SELF HOSTING__
+  : A service that is hosted by the person or group who uses it. More relevant with federation of services than with centralised service
+- Related Terms:
+- Examples:
+  - mastodon
+  - gitea
+  - matrix-synapse
 
 __SMART CONTRACT__
   : A piece of code that executes in a virtual machine that is governed by a public consensus mechanism.
