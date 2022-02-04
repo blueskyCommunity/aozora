@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",
+    "https://w3id.org/security/v1"
+  ],
+  "@type": "TrustClaim",
+  "claim": {
+    "@context": "https://schema.org/",
+    "type": "Relationship",
+    "firstEntity": "https://www.youtube.com/channel/UCDfubfRu3aRLeh_JSfAtnLg",
+    "secondEntity": "https://twitter.com/bluesky_commons",
+    "relationship": "under common control",
+    "howKnown": "first_hand",
+    "whenChecked": "2/4/2022"
+  },
+  "signature": {
+    "type": "EcdsaKoblitzSignature2016",
+    "created": "2022-02-04T22:48:45Z",
+    "creator": "ecdsa-koblitz-pubkey:020d79074ef137d4f338c2e6bef2a49c618109eccf1cd01ccc3286634789baef4b",
+    "signatureValue": "H/GYSf3nxxe3Dq/vVoumnJjUPsZExt0iV/QDRy9kgYUKLitS2qD+BO9lz+pZW/vaUjHC7ZcacnR/zWdnQlkLbBE="
+  },
+  "_": "The intention of this assertion is to claim that the Youtube channel and the twitter handle for the bluesky community are controlled by the same person"
+}
