@@ -51,4 +51,34 @@ of meeting regulatory obligations, and it could prepare some material
 that is accessible to these operators on how to meet these
 obligations.
 
+## Geographic overview
 
+We should consider the various regions that are regulating internet
+activities, and identify the laws that are in effect.
+
+### Europe
+
+Generally-speaking, laws that are made at EU level are either
+regulations or directives. A directive, once passed, needs to be
+translated ("transposed") into law in each of the member states,
+normally with a deadline of three years from its passage. An example
+of a directive that should be considered in this area is the EU
+Copyright Directive, which is currently going through the national
+parliaments at varying speekds. Regulations are EU-wide laws that apply
+directly.
+
+Where variability is written into the regulation, members states pass
+laws to apply local parameters. An example of a regulation is the
+General Data Protection Regulation (GDPR) which came into force in May
+2018.
+
+Some of the EU-based regulations or directives that are applicable are:
+- The GDPR 
+- The Digital Service Act
+- The Copyright Directive
+- [Any more?]
+
+### The United Kingdom
+
+No longer a member of the EU, the UK still follows the GDPR, but is
+developing a new
