@@ -1,14 +1,32 @@
 # Regulatory Concerns for Decentralized Systems
 
-Notes
-- we should consider both federated and p2p
-  - Need to determine what the distinction is.
+## Document information
+
+Author -- [Éibhear Ó hAnluain](https://matrix.to/#/@eibhear:matrix.gibiris.org)
+
+### Notes
+    - we should consider both federated and p2p
+      - Need to determine what the distinction is.
 
 ## Purpose
 
-The goal of this document is to identify regulatory concerns for
-operators of self-hosted, federated services that fall under
-consideration of the BlueSky project.
+This document lays out concerns for "self hosters" of services that
+are part of the decentralised network that BlueSky is building. These
+concerns are not addressed in any comprehensive manner, though they
+have been around for some time.
+
+Governments around the world are passing more and more laws governing
+how internet service behave. These laws seek to control how certain
+information can be made available on the internet. Terrorism-related
+information, child abuse imagery, copyright infringing material,
+abusive postings, hate speech and data protection are some of the
+concerns that these laws address.
+
+A review of the news reporting around these matters shows that it's
+very hard to get the controls right, and this is before legislators
+move their sights away from the large centralised services. In fact,
+many of these laws assume that only large services will be impacted,
+those in most cases 
 
 With increasing pushes by governments (at regional, national, state or
 local levels) to deal with issues that arise from the greater access
