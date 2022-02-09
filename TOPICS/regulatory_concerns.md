@@ -26,7 +26,7 @@ A review of the news reporting around these matters shows that it's
 very hard to get the controls right, and this is before legislators
 move their sights away from the large centralised services. In fact,
 many of these laws assume that only large services will be impacted,
-those in most cases 
+those in most cases <=== Finished rewrite here
 
 With increasing pushes by governments (at regional, national, state or
 local levels) to deal with issues that arise from the greater access
