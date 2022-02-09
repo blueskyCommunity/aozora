@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "summary": "Bob said hi to Sue",
+  "type": "Note",
+  "actor": "http://Bob.example.org",
+  "object": "http://example.org/posts/1",
+  "target": "http://sue.example.org", 
+  "to": [ "http://sue.example.org" ].
+}
