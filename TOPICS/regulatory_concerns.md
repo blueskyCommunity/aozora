@@ -15,18 +15,49 @@ are part of the decentralised network that BlueSky is building. These
 concerns are not addressed in any comprehensive manner, though they
 have been around for some time.
 
+This document outlines two areas where BlueSky and the BlueSky
+Community can help small operations hosting federated services or
+operating nodes that contribute to the decentralised web.
+
+## Legislative processes
+
 Governments around the world are passing more and more laws governing
 how internet service behave. These laws seek to control how certain
 information can be made available on the internet. Terrorism-related
 information, child abuse imagery, copyright infringing material,
 abusive postings, hate speech and data protection are some of the
-concerns that these laws address.
+concerns that these laws address, or seek to address, or whose
+sponsors assert seek to address.
 
 A review of the news reporting around these matters shows that it's
-very hard to get the controls right, and this is before legislators
-move their sights away from the large centralised services. In fact,
-many of these laws assume that only large services will be impacted,
-those in most cases <=== Finished rewrite here
+very hard to get the controls right. Many of these laws assume that
+only large services will be impacted, and some of these laws nakedly
+target specific companies or internet services, often for nothing more
+than populist reasons.
+
+Where possible, civil society organisations like the ACLU and EFF,
+Open Rights Group and Digital Rights Ireland, EDRi, La Quadrature du
+Net the FSFE and others seek to influence the laws, either by engaging
+the the legislative process or -- failing that or when some
+unanticipated scenario arises -- through the courts. However, in the
+main, these efforts are again focussed on the affect that the larger
+organisations and services have on the rights of internet users.
+
+An example of an exception to this approach was with the EU Copyright
+Directive that was approved in 2019. During the development of the
+law, a proposal that risked killing Free and Open Source Software
+development was eventually removed because the impacts would have had
+a serious and large negative and real impact on innovation.
+
+In all jurisdictions there needs to be a means for the interests of
+federated services, and other decentralised operations, to be
+represented in the legislative process. In particular, the unnecessary
+negative consequences to the decentralised web and to federated
+services of new would need to be made known to the relevant
+parliaments and congresses, allowing them the proper opportunity to
+address these concerns.
+
+## Support for self-hosters
 
 With increasing pushes by governments (at regional, national, state or
 local levels) to deal with issues that arise from the greater access
