@@ -59,75 +59,86 @@ address these concerns.
 
 ## Support for self-hosters
 
-With increasing pushes by governments (at regional, national, state or
-local levels) to deal with issues that arise from the greater access
-people have to each other, we are seeing more regulations being
-proposed and implemented that have the potential to damage the ability
-of operators of small services to engage fully on the internet.
+For the purposes, of this document, self-hosting is when an individual
+or small organisation will host a web-based service instead of making
+use of the larger, more well-known, centralised services. For example,
+instead of using twitter, an individual may use mastodon, or instead
+of using WhatsApp, an activist group may prefer the greater
+independence that a [matrix] homeserver offers.
 
-Some examples of regulations include:
-- Privacy laws
-- Anti-terrorism laws
-- Laws seeking to deal with the production and distribution of child
-  sexual abuse material
-- Laws seeking to deal with other forms of abuse (for example
-  non-consensual image sharing, hate and incitement to hatred, racism,
-  anti-trans, mysogeny, etc.)
-- Laws governing lese majeste and seeking to protect politicians and
-  other public figures from scrutiny and criticism.
-- [Please add others]
+These individuals or groups will rarely be expert on all the laws that
+apply to them as hosters or operators of such services, and equally
+rare will it be that they have easy access to well-informed legal
+advice.
 
+This could have some concerning effects:
+- The service may unwittingly be configured or operated in a manner
+  that is not legal in its jurisdiction (or in the jurisdiction a
+  proportion of its users, perhaps even just one of the users!),
+  exposing the operator to civil or criminal action.
+- The service operator may be aware of the existence of such laws,
+  without fully appreciating their responsibilities, and therefore
+  will be constantly anxious about the risk of an allegation of
+  illegal operation of a service
+- And many users may decide that the laws are just too onerous or
+  risky to bother, depriving the federated and decentralised web of a
+  participant, adding more users unnecessarily to the powerful
+  incumbents.
+  
+## Where BlueSky can help
 
-Some examples of challenges that operators of federated nodes could
-face:
-- Speech that is legal in the country where a posting is made may be
-  illegal in the country it is served from when viewed by a user on a
-  separate node.
-- A posting may be required to be taken down within a period of time
-  that is not possible for the operator to perform (e.g. operator is
-  asleep and won't get the demand to take the posting down within the
-  hour, the operator is overseas and can't get access to the service
-  for some time).
-- A user may require a copy of all the data that relates to them and
-  the operator doesn't know how to extract that copy and send it to
-  the user.
+BlueSky, and the BlusSky community could be a highly valuable resource
+for addressing these two categories of concern.
 
-There are many more, these are just a sample.
+### Contributing in the policy-making processes
 
-The BlueSky project could be a means to gather the potential concerns
-that operators of decentralised and federated nodes may have in terms
-of meeting regulatory obligations, and it could prepare some material
-that is accessible to these operators on how to meet these
-obligations.
+BlueSky could work in conjunction with other, closely-aligned
+organisations (such as the Internet Archive, EFF, etc.) to lobby for
+consideration of federated services. Such work would include
+activities like:
+- Developing policies to promote to civil-society organisations and
+  politicians
+- Running campaigns to inform legislators
+- Offering representatives to testify at legislative hearings
+- Co-singing open letters
 
-## Geographic overview
+### Helpful resources for self-hosters
 
-We should consider the various regions that are regulating internet
-activities, and identify the laws that are in effect.
+As well as developing architectures and technologies to develop a
+platform for a decentralised web, BlueSky could also develop a suite
+of resources to guide individuals and small organisations hosting
+federated or decentralised services. These resources would include a
+run-through of the laws that apply to them (based on the type of
+service, perhaps, their target user-bases and -- of course -- their
+jurisdiction). These guides will offer information such as what's
+permitted and what's not, what the operator's responsibilities are to
+their users and to the state, the risks they need to be aware of and,
+of course, their rights.
 
-### Europe
+It would take some time to put these together and no small amount of
+access to legal expertise, but such clarity in this area for people
+who are keen to participate can only serve to increase engagement and
+contributions to BlueSky's goals.
 
-Generally-speaking, laws that are made at EU level are either
-regulations or directives. A directive, once passed, needs to be
-translated ("transposed") into law in each of the member states,
-normally with a deadline of three years from its passage. An example
-of a directive that should be considered in this area is the EU
-Copyright Directive, which is currently going through the national
-parliaments at varying speekds. Regulations are EU-wide laws that apply
-directly.
+## Resources
 
-Where variability is written into the regulation, members states pass
-laws to apply local parameters. An example of a regulation is the
-General Data Protection Regulation (GDPR) which came into force in May
-2018.
-
-Some of the EU-based regulations or directives that are applicable are:
-- The GDPR 
-- The Digital Service Act
-- The Copyright Directive
-- [Any more?]
-
-### The United Kingdom
-
-No longer a member of the EU, the UK still follows the GDPR, but is
-developing a new
+- [webdevlaw](https://webdevlaw.uk/), the web site of Heather Burns,
+  perhaps the top policy analyst in this space
+  - [Why the “Nick Clegg Law” is saying the quiet part out
+    loud](https://webdevlaw.uk/2022/02/11/why-the-nick-clegg-law-is-saying-the-quiet-part-out-loud/)
+    -- an analysis on how the UK's Online Safety bill, as a policy
+    position, is not interested in much more than persecuting
+    facebook's officers.
+  - [Internet regulation debates need rules of engagement. Here’s a
+    start.](https://webdevlaw.uk/2021/11/07/internet-regulation-debates-need-rules-of-engagement-heres-a-start/)
+    -- how serious internet policy development should be approached.
+- [Éibhear Ó
+  hAnluain](https://www.gibiris.org/eo-blog/tags/policy.html) -- the
+  author of this document. Some writings on the matter, including:
+  - [The 3 Rs of self-hosting -- looking for help](The 3 Rs of
+    self-hosting -- looking for help) -- my call for help on this
+    particular effort.
+  - [Response to consultation on so-called "Harmful
+    Content"](https://www.gibiris.org/eo-blog/posts/2019/04/15_harmful-content-consultation.html)
+    -- my response to a public consultation run by the government of
+    Ireland.
