@@ -138,9 +138,9 @@ contributions to BlueSky's goals.
 - [Éibhear Ó
   hAnluain](https://www.gibiris.org/eo-blog/tags/policy.html) -- the
   author of this document. Some writings on the matter, including:
-  - [The 3 Rs of self-hosting -- looking for help](The 3 Rs of
-    self-hosting -- looking for help) -- my call for help on this
-    particular effort.
+  - [The 3 Rs of self-hosting -- looking for
+    help](https://www.gibiris.org/eo-blog/posts/2022/02/10_the-three-rs-of-self-hosting.html)
+    -- my call for help on this particular effort.
   - [Response to consultation on so-called "Harmful
     Content"](https://www.gibiris.org/eo-blog/posts/2019/04/15_harmful-content-consultation.html)
     -- my response to a public consultation run by the government of
