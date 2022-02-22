@@ -56,21 +56,3 @@ except:
     print("couldn't log into wc db. status code is {}".format(wc_request.status_code))
 
 print("{} offers were pushed and {} were not pushed".format(pushed, not_pushed))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
