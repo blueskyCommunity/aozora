@@ -1,10 +1,8 @@
 import requests
 import json
-import logging
+import datetime
 import argparse
 import os
-
-logger = logging.getLogger(__name__)
 
 WC_TOKEN_URL = os.environ.get('WC_TOKEN_URL')
 MASTODON_ACCESS_TOKEN = os.environ.get('MASTODON_ACCESS_TOKEN')
@@ -30,18 +28,31 @@ try:
         print("tried exporting offers and result was {}".format(offer_export.status_code))
         for offer in offer_export.json():
             if offer['active_circle_name'] == 'bluesky-community':
+                if offer['upcoming'] != []:
+                    startdate = offer["upcoming"][0]["start"]
+                    enddate = offer["upcoming"][0]["end"]
+                    _startdate = startdate.replace('Z', '+00:00')
+                    _enddate = enddate.replace('Z', '+00:00')
+                    fstartdate = datetime.datetime.fromisoformat(_startdate)
+                    fenddate = datetime.datetime.fromisoformat(_enddate)
+                    fstartdate_with_tz = str(fstartdate) + " " + datetime.datetime.tzname(fstartdate)
+                    fenddate_with_tz = str(fenddate) + " " + datetime.datetime.tzname(fenddate)
+                else:
+                    fstartdate_with_tz = 'Not set'
+                    fenddate_with_tz = 'Not set'
                 offer_string = """This is an event from {} circle at whatscookin.
 Event link : https://join.whatscookin.us/offer/{}
 Event title : {}
 Event owner : {}
+Event start : {}
+Event end : {}
 Description : {}
-Meeting Link : {}""".format(
-    offer["active_circle_name"],offer["id"], offer["title"], offer["by"], offer["desc"], offer["meeting_link"])
+Meeting Link : {}""".format(offer["active_circle_name"], offer["id"], offer["title"], offer["by"], fstartdate_with_tz, fenddate_with_tz, offer["desc"], offer["meeting_link"]) # noqa
                 headers = {"Authorization": "Bearer {}".format(MASTODON_ACCESS_TOKEN)}
                 payload = {"status": offer_string}
                 try:
                     with requests.Session() as s:
-                        response = s.post("`https://mastodon.blueskycommunity.net/api/v1/statuses`", data=payload, headers=headers, timeout=15)
+                        response = s.post("https://mastodon.blueskycommunity.net/api/v1/statuses", data=payload, headers=headers, timeout=15)
                         if response.status_code == 200:
                             pushed += 1
                         else:
