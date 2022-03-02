@@ -1,10 +1,9 @@
 import requests
 import json
-import logging
 import argparse
+import datetime
+import pytz
 import os
-
-logger = logging.getLogger(__name__)
 
 WC_TOKEN_URL = os.environ.get('WC_TOKEN_URL')
 MASTODON_ACCESS_TOKEN = os.environ.get('MASTODON_ACCESS_TOKEN')
@@ -28,15 +27,32 @@ try:
     try:
         offer_export = requests.get('https://platform.whatscookin.us/home/?circle=bluesky-community', headers=offer_headers, timeout=20)
         print("tried exporting offers and result was {}".format(offer_export.status_code))
+        pst_tz = pytz.timezone('US/Pacific')
         for offer in offer_export.json():
             if offer['active_circle_name'] == 'bluesky-community':
-                offer_string = """This is an event from {} circle at whatscookin.
+                if offer['upcoming'] != []:
+                    startdate = offer["upcoming"][0]["start"]
+                    _startdate = startdate.replace('Z', '+00:00')
+                    _startdate_obj = datetime.datetime.fromisoformat(_startdate).replace(tzinfo=datetime.timezone.utc)
+                    startdate_in_pst = _startdate_obj.astimezone(tz=pst_tz)
+                    startdate_result = startdate_in_pst.strftime("%b %d %Y %I:%M %p %Z")
+
+                    enddate = offer["upcoming"][0]["end"]
+                    _enddate = enddate.replace('Z', '+00:00')
+                    _enddate_obj = datetime.datetime.fromisoformat(_enddate).replace(tzinfo=datetime.timezone.utc)
+                    enddate_in_pst = _enddate_obj.astimezone(tz=pst_tz)
+                    enddate_result = enddate_in_pst.strftime("%b %d %Y %I:%M %p %Z")
+                else:
+                    startdate_result = 'Not set'
+                    enddate_result = 'Not set'
+                offer_string = """This is an event from {} circle.
 Event link : https://join.whatscookin.us/offer/{}
 Event title : {}
 Event owner : {}
+Event start : {}
+Event end : {}
 Description : {}
-Meeting Link : {}""".format(
-    offer["active_circle_name"],offer["id"], offer["title"], offer["by"], offer["desc"], offer["meeting_link"])
+Meeting Link : {}""".format(offer["active_circle_name"],offer["id"], offer["title"], offer["by"], startdate_result, enddate_result, offer["desc"], offer["meeting_link"]) # noqa
                 headers = {"Authorization": "Bearer {}".format(MASTODON_ACCESS_TOKEN)}
                 payload = {"status": offer_string}
                 try:
