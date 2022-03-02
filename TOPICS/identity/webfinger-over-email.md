@@ -37,3 +37,7 @@ WebFinger (RFC )
 AaronDGoldman — 01/17/2022
 Now a site I join can let me log in using only my email address and the key that came back from the web finger email. Done
 The browser could even send a signed nonce with every http request with that it sends.
+
+# From Ian:
+
+This only sounds interesting to me if it includes (MUST) the person's public key, and an identity link proof connecting that keypair to that email address. Then it becomes self-certifying. Even better if the incoming email includes a nonce to sign as well to stop replay attacks after domain/email owner changes, or the datetime is included in what's signed.
