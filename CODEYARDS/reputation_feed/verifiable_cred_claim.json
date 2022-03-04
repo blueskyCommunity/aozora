@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "id": "@id",
+    "type": "@type",
+
+    "VerifiableCredential": {
+      "@id": "https://www.w3.org/2018/credentials#VerifiableCredential",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "cred": "https://www.w3.org/2018/credentials#",
+        "sec": "https://w3id.org/security#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+        "credentialSchema": "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",  // can we do this?
+        "credentialStatus": {"@id": "cred:credentialStatus", "@type": "@id"},
+        "credentialSubject": {"@id": "cred:credentialSubject", "@type": "@id"},
+        "evidence": {"@id": "cred:evidence", "@type": "@id"},
+ 
+        "issuanceDate": {"@id": "cred:issuanceDate", "@type": "xsd:dateTime"},
+        "proof": {"@id": "sec:proof", "@type": "@id", "@container": "@graph"},
+        "refreshService": {
+          "@id": "cred:refreshService",
+          "@type": "@id",
+          "@context": {
+            "@version": 1.1,
+            "@protected": true,
+
+            "id": "@id",
+            "type": "@type",
+
+            "cred": "https://www.w3.org/2018/credentials#",
+
+            "ManualRefreshService2018": "cred:ManualRefreshService2018"
+          }
+        },
+        "termsOfUse": {"@id": "cred:termsOfUse", "@type": "@id"},
+        "validFrom": {"@id": "cred:validFrom", "@type": "xsd:dateTime"},
+        "validUntil": {"@id": "cred:validUntil", "@type": "xsd:dateTime"}
+      }
+    },
+
+    "VerifiablePresentation": {
+      "@id": "https://www.w3.org/2018/credentials#VerifiablePresentation",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "cred": "https://www.w3.org/2018/credentials#",
+        "sec": "https://w3id.org/security#",
+
+        "holder": {"@id": "cred:holder", "@type": "@id"},
+        "proof": {"@id": "sec:proof", "@type": "@id", "@container": "@graph"},
+        "verifiableCredential": {. // can we just do this??
+  "@context": "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",
+  "@type": "TrustClaim",
+  "claim": {
+    "@context": "https://schema.org/",
+    "type": "Review",
+    "itemReviewed": "https://twitter.com/Shoon90644344/status/1468184590896435202",
+    "reviewRating": {
+      "@context": "https://schema.org/",
+      "type": "ClaimReview",
+      "claimReviewed": "Is Credible",
+      "reviewRating":{
+        "@context":"https://schema.org/",
+        "type": "Rating",
+        "ratingValue": 0.8,
+        "bestRating": 1.0,
+        "worstRating": -1.0
+      },
+      "notes":"would be good to tie this also to Chevron/Total",
+      "howKnown": "Second hand report from trusted local source, same day as tweet",
+      "whenChecked": "12/7/2021". // may be different than when entered into the graph
+      
+    }
+   
+    
+  },
+  "reference":"https://json-ld.org/playground/",
+  "reference2":"https://github.com/trustgraph/trustgraph"
+}
+      }
+    },
+
+    "proof": {"@id": "https://w3id.org/security#proof", "@type": "@id", "@container": "@graph"}
+  }
+}
