@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",
+    "https://w3id.org/security/v1",
+    "https://w3id.org/security/v1"
+  ],
+  "@type": "TrustClaim",
+  "claim": {
+    "@context": "https://schema.org/",
+    "type": "Relationship",
+    "firstEntity": "https://en.wikipedia.org/wiki/Armed_Forces_of_Ukraine",
+    "secondEntity": "UA843000010000000047330992708",
+    "relationship": "controls",
+    "howKnown": "seen on the web",
+    "source": "https://twitter.com/oioiisogolden/status/1497245172215820292",
+    "whenChecked": "3/4/2022"
+  },
+  "signature": {
+    "type": "EcdsaKoblitzSignature2016",
+    "created": "2022-03-04T21:38:23Z",
+    "creator": "ecdsa-koblitz-pubkey:020d79074ef137d4f338c2e6bef2a49c618109eccf1cd01ccc3286634789baef4b",
+    "signatureValue": "H0BNLhua7CZiJV6vn0pDgij3xBBnP9Vfa6Z7MjG+ulkeTXl955EDHNFm4E7XFwWYlksoSuucLqaRfsww2N87kNg="
+  }
+}
