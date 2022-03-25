@@ -6,6 +6,8 @@ See the original [Goals and Scope document](https://gitlab.com/bluesky-community
 
 You can also read the [original literature list](https://gitlab.com/bluesky-community/flow/-/blob/main/Literature.md) provided.  For newer links browse thru [TOPICS](https://gitlab.com/bluesky-community/flow/-/tree/main/TOPICS)
 
+Jay Graber of the Bluesky organization has [written a conceptual framework of the self-certified web](https://jaygraber.medium.com/web3-is-self-certifying-9dad77fd8d81)
+
 ## How To Contribute
 
 1) The simplest first way to contribute is to try out code or apps from [blueskycommunity.net](https://blueskycommunity.net), and report in [#in-the-wild](https://discord.gg/9KzA2frh6d)!  
