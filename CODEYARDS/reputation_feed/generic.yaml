@@ -1,0 +1,15 @@
+# simplest possible conceptual framework
+# note that itemReviewed can be structured
+# and that reason and source can be lists
+
+issuer : who says
+claim: 
+
+      itemReviewed: structured obj, text or did
+
+      reviewRating:
+              certainty value (with limits):
+              reason: (firsthand/secondhand) text or list
+              source: (url) text or list
+
+signature:
