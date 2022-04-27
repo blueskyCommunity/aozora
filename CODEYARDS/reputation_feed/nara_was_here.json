@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",
+    "https://w3id.org/security/v1"
+  ],
+  "@type": "TrustClaim",
+  "claim": {
+    "@context": "https://schema.org/",
+    "type": "Review",
+    "claimSubject": "https://internetidentityworkshop.com/#April2022:OpenTrustClaimsSession",
+    "attestation": {
+      "@context": "https://schema.org/",
+      "type": "ClaimReview",
+      "specificType": "attendance",
+      "claimReviewed": "attended by",
+      "claimObject": "nara007",
+      "reviewRating": {
+        "@context": "https://schema.org/",
+        "type": "ConfidenceRating",
+        "ratingValue": 1,
+        "bestRating": 1,
+        "worstRating": 0
+      },
+      "positiveNotes": "",
+      "howKnown": "first hand",
+      "source": "I can see her",
+      "whenChecked": "4/27/2022"
+    }
+  },
+  "signature": {
+    "type": "EcdsaKoblitzSignature2016",
+    "created": "2022-04-27T23:08:07Z",
+    "creator": "ecdsa-koblitz-pubkey:020d79074ef137d4f338c2e6bef2a49c618109eccf1cd01ccc3286634789baef4b",
+    "signatureValue": "H/2AI91pcfJanB/tUDVjRweBsUIP+6IkJ8hQLosja0utHgbCyNIQaHVz5bV5PNRr2JyE4xJbBHot9QzHQkgOROc="
+  }
+}
