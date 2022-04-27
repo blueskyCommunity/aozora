@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/trustgraph/trustgraph-schema/gh-pages/TrustClaim.jsonld",
+    "https://w3id.org/security/v1"
+  ],
+  "@type": "TrustClaim",
+  "claim": {
+    "@context": "https://schema.org/",
+    "type": "Review",
+    "itemReviewed": "https://internetidentityworkshop.com/#April2022",
+    "reviewRating": {
+      "@context": "https://schema.org/",
+      "type": "ClaimReview",
+      "claimReviewed": "Approximate attendance 250",
+      "reviewRating": {
+        "@context": "https://schema.org/",
+        "type": "ConfidenceRating",
+        "ratingValue": 0.75,
+        "bestRating": 1,
+        "worstRating": 0
+      },
+      "positiveNotes": "The biggest one I've seen yet",
+      "howKnown": "second hand",
+      "source": "acct:bengo@twitter.com",
+      "whenChecked": "4/27/2022"
+    }
+  },
+  "signature": {
+    "type": "EcdsaKoblitzSignature2016",
+    "created": "2022-04-27T23:01:49Z",
+    "creator": "ecdsa-koblitz-pubkey:020d79074ef137d4f338c2e6bef2a49c618109eccf1cd01ccc3286634789baef4b",
+    "signatureValue": "Hz19QVQ1eoWcoKGiZgj2WaT43wHUVhnhdh65I3xOJHb1CwkbUlfPGkoft1pLWgQAhsYCploQoVmSz0QOE5dUpyQ="
+  }
+}
