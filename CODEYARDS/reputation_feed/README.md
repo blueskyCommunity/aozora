@@ -19,7 +19,9 @@ see https://w3c.github.io/json-ld-bp/
 
 Some source vocabularies:
 
-`curl -H "Accept: application/ld+json" https://www.w3.org/ns/activitystreams
- > activitystreams.jsonld`
+```
+curl -H "Accept: application/ld+json" https://www.w3.org/ns/activitystreams
+ > activitystreams.jsonld
+```
 
 https://schema.org/version/latest/schemaorg-current-https.jsonld
