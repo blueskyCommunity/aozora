@@ -1,5 +1,11 @@
 # Getting Started
 
+## ADX - Authenticated Data eXperiment
+
+ Check out the code Bluesky released 
+ 
+https://github.com/bluesky-social/adx
+
 ## Goals, scope and literature 
 
 See the original [Goals and Scope document](https://gitlab.com/bluesky-community/flow/-/blob/main/original-goals-and-scope.md) that Twitter vetted (note that Identity and Social Graph Portability are the two initial goals now)
