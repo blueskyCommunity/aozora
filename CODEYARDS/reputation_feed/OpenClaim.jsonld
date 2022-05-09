@@ -8,8 +8,16 @@
     "sec": "https://w3id.org/security#",
     "xsd": "https://www.w3.org/2001/XMLSchema#",
     
-    "subject": {"@id": "schema:Thing"},
-    "claim": 
+    "subject": {"@id": "schema:Thing",
+                "rdfs:comment": "The primary subject of this claim, what this claim is about"},
+    "claimText": { "@id": "https://schema.org/Text", 
+                   "rdfs:comment": "Verb or short verb phrase; natural language for what is being claimed."},
+    "claimProperty": { "@id": "rdf:Property", 
+                       "rdfs:comment": "URI of any specific property, such as https://schema.org/owns or foaf:knows. Optional. "},
+    "object": {"@id": "schema:Thing",
+               "rdfs:comment": "Related by claim to subject.  ie if the claim is 'owns' then the claim is that '[subject] owns [object]' "},
+               
+
     
     "language": {"@id": "schema:inLanguage", "@type": "rdf:Property"},
     "issued": {"@id": "cred:issued", "@type": "xsd:dateTime"},
