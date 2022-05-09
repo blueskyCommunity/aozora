@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+    
+    "cred": "https://w3id.org/credentials#",
+    "schema": "https://schema.org/",
+    "sec": "https://w3id.org/security#",
+    "xsd": "https://www.w3.org/2001/XMLSchema#",
+    
+    "subject": {"@id": "schema:Thing"},
+    "claim": 
+    
+    "language": {"@id": "schema:inLanguage", "@type": "rdf:Property"},
+    "issued": {"@id": "cred:issued", "@type": "xsd:dateTime"},
+    "issuer": {"@id": "cred:issuer", "@type": "@id"},
+    "signature": "sec:signature"
+  }
+}
