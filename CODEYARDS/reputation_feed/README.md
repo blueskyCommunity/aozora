@@ -14,3 +14,5 @@ If you do Signed with Bitcoin you need a bitcoin private key
 TODO: how do you get a bitcoin private key - add here
 
 preferred to use elliptic curve private keys .. 25519
+
+see https://w3c.github.io/json-ld-bp/
