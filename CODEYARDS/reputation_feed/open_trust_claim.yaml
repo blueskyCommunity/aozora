@@ -1,0 +1,26 @@
+# simplest possible conceptual framework
+# that fully matches the use cases
+# note that reason and source can be lists
+
+issuer : who says
+claim: 
+    
+      subject: structured obj, text or did
+      claim: fixed-vocab-string
+      object: structured obj, text or did
+      qualifer: string, (optional)
+      aspect: fixed-vocab-string (optional)
+      
+      how_known: thing or array of thing
+      source: thing or array of thing
+      date_observed: date
+      
+      confidence: float, 0..1 (optional)
+
+      reviewRating: (can use existing from schema.org, optional)
+              rating: float, optional
+              rating_max: float, optional
+              rating_min: float, optiona
+
+signature:
+date signed
