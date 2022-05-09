@@ -1,4 +1,4 @@
-# bluesky community repo
+# dSocialCommons repo
 
 Markdown docs per discord channel, working group and topic files
 
