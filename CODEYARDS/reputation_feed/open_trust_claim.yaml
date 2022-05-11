@@ -13,7 +13,7 @@ claim:
       
       how_known: thing or array of thing
       source: thing or array of thing
-      date_observed: date
+      effective_date: date
       
       confidence: float, 0..1 (optional)
 
