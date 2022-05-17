@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+    "schema": "https://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "cred": "https://www.w3.org/2018/credentials#", // ??? https://w3id.org/credentials/ ???
+    "sec": "https://w3id.org/security#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    
+    "subject": {"@id": "schema:Thing",
+                "rdfs:comment": "The primary subject of this claim, what this claim is about.  Should be an entity, may be a DID or a URI"},
+    "claimText": { "@id": "https://schema.org/Text", 
+                   "rdfs:comment": "Verb or short verb phrase; natural language for what is being claimed."},
+    "claimLanguage": {"@id": "schema:inLanguage", "@type": "rdf:Property"},
+    "claimProperty": { "@id": "rdf:Property", 
+                       "rdfs:comment": "URI of any specific property, such as https://schema.org/owns or foaf:knows. Optional. "},
+    
+    "object": {"@id": "schema:Thing",
+               "rdfs:comment": "Related by claim to subject. ie if the claim is 'owns' then the claim is that '[subject] owns [object]' Should be an entity, may be a DID or URI.  "},
+    
+    "context": {"@id": "schema:Thing",
+                "rdfs:comment": "Optional structured context data for specific types of claims, intended as a qualifer or extra data about the context or nature of the claim itself, not an entity"},
+    
+    "howKnown": [{"@id": "schema:Text", 
+                 "rdfs:comment": "How did the signer observe or determine the accuracy of this claim?  ie 'first-hand', 'saw on web', etc. Note that a single claim may have multiple howKnown's " }],
+    "howKnownProperty" : [{ "@id": "rdf:Property", 
+                         "rdfs:comment": "URI of a specific property, such as a future type https://cooperation.org/directObservation. "}],
+    "sources": [{ "@id": "schema:identifier",
+                 "rdfs:comment": "URL or other identifier of a source for this knowledge. Could be a person.  A protected source may not be identified."}],
+    "sourcesDescription": [{"@id": "schema:Text", 
+                           "rdfs:comment": "Free text description of the sources.  TODO can this be incorporated into the sources themselves?"}],
+    "confidenceLevel": { "@id": "schema:Float",
+                          "rdfs:comment": "Floating point value from 0.0 to 1.0, how confident the signer is in the truth of this claim"},
+    "ratingLevel": { "@id": "schema:Float",
+                     "rdfs:comment": "Floating point value from 0.0 to 1.0, how strongly the signer wants to qualify the claim - ie if the claim is that a person is an 'expert' how expert are they? Optional."},
+    "effectiveDate": { "@id":  "schema:DateTime",
+                     "rdfs:comment": "At what date was the claim true, according to the signer?"},
+    "observationDate": {"@id":  "xsd:dateTime",
+                     "rdfs:comment": "At what date did the signer make an observation that supported the claim?  For example, server logs might indicate a hack occurred on 1/1/2020, but the logs were actually processed on 1/20/2020"},
+    "issued": {"@id": "cred:issued", "@type": "xsd:dateTime"},
+    "issuer": {"@id": "cred:issuer", "@type": "@id"},
+    "signature": "sec:signature"
+  }
+}
