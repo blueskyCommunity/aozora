@@ -1,0 +1,19 @@
+//Content-Type: application/reputon+json
+
+     {
+       "application": "event sponsorships",
+       "reputons": [
+         {
+           "rater": "twitter.com/gvelez17",
+           "assertion": "sponsored https://www.rightscon.org/ 2022",
+           "rated": "https://www.verisign.com/",
+           "rating": 0.99,
+           "sample-size": 1
+         }
+       ]
+     }
+
+// this is simple and concise
+// but it doesnt allow two entities
+// or external sources
+// and is not signed
