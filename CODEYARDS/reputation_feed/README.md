@@ -25,3 +25,8 @@ curl -H "Accept: application/ld+json" https://www.w3.org/ns/activitystreams
 ```
 
 https://schema.org/version/latest/schemaorg-current-https.jsonld
+
+
+## Prior work
+
+https://github.com/worknation/work.nation#architecture
