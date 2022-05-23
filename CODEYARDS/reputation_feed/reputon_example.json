@@ -1,6 +1,6 @@
 
      {
-       "comment-header": "would have Content-Type: application/reputon+json ",
+       "comment-header": "would have Content-Type: application/reputon+json.  See https://datatracker.ietf.org/doc/html/rfc7071#section-3.1 ",
        "application": "event sponsorships",
        "reputons": [
          {
