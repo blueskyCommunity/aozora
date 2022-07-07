@@ -33,6 +33,6 @@ def toot_on_mastodon(tweet):
         print("Could not send to mastodon!")
 
 streamer = MyStreamer(bearer_token)
-streamer.add_rules(tweepy.StreamRule("from:bluesky__events -is:retweet"))
+streamer.add_rules(tweepy.StreamRule("from:dsocialcommons -is:retweet"))
 
 streamer.filter()

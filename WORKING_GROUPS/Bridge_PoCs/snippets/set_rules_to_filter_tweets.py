@@ -53,7 +53,7 @@ def delete_all_rules(rules):
 def set_rules(delete):
     # You can adjust the rules if needed
     rule_to_filter_tweets = [
-        {"value": "from:bluesky__events -is:retweet"}
+        {"value": "from:dsocialcommons -is:retweet"}
     ]
     payload = {"add": rule_to_filter_tweets}
     response = requests.post(
