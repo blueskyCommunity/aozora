@@ -2,11 +2,14 @@
 
 import requests
 import os
+from dotenv import load_dotenv
 import json
 
-TWITTER_BEARER_TOKEN = os.environ.get("TWITTER_BEARER_TOKEN")
-MASTODON_ACCESS_TOKEN = os.environ.get("MASTODON_ACCESS_TOKEN")
-MASTODON_WEBHOOK_URL = os.environ.get("MASTODON_WEBHOOK_URL")
+load_dotenv()
+
+TWITTER_BEARER_TOKEN = os.environ["TWITTER_BEARER_TOKEN"]
+MASTODON_ACCESS_TOKEN = os.environ["MASTODON_ACCESS_TOKEN"]
+MASTODON_WEBHOOK_URL = os.environ["MASTODON_WEBHOOK_URL"]
 
 def bearer_oauth(r):
     """

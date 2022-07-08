@@ -2,11 +2,15 @@
 
 import requests
 import os
+from dotenv import load_dotenv
 import json
+
+load_dotenv()
 
 # To set your enviornment variables in your terminal run the following line:
 # export 'TWITTER_BEARER_TOKEN'='<your_bearer_token>'
-TWITTER_BEARER_TOKEN = os.environ.get("TWITTER_BEARER_TOKEN")
+TWITTER_BEARER_TOKEN = os.environ['TWITTER_BEARER_TOKEN']
+TWITTER_HANDLE = os.environ['TWITTER_HANDLE']
 
 def bearer_oauth(r):
     """
@@ -53,7 +57,7 @@ def delete_all_rules(rules):
 def set_rules(delete):
     # You can adjust the rules if needed
     rule_to_filter_tweets = [
-        {"value": "from:dsocialcommons -is:retweet"}
+        {"value": "from:{} -is:retweet".format(TWITTER_HANDLE)}
     ]
     payload = {"add": rule_to_filter_tweets}
     response = requests.post(
