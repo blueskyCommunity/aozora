@@ -8,11 +8,15 @@ import html
 import urllib3
 import shutil
 from pathlib import Path
+import smtplib, ssl
 
 load_dotenv()
 
 pool = urllib3.PoolManager()
 
+port = 465  # For SSL
+EMAIL_APP_PW = os.environ['EMAIL_APP_PW']
+EMAIL_ADDRESS = os.environ['EMAIL_ADDRESS']
 TWITTER_BEARER_TOKEN = os.environ["TWITTER_BEARER_TOKEN"]
 MASTODON_ACCESS_TOKEN = os.environ["MASTODON_ACCESS_TOKEN"]
 MASTODON_WEBHOOK_URL = os.environ["MASTODON_WEBHOOK_URL"]
@@ -29,6 +33,15 @@ class MyStreamer(tweepy.StreamingClient):
 
     def on_tweet(self, tweet):
         return super().on_tweet(tweet)
+
+    def on_closed(self, response):
+        send_email_on_errors(response.data)
+
+    def on_connection_error(self):
+        send_email_on_errors("Connection Error!")
+
+    def on_request_error(self, status_code):
+        send_email_on_errors(str(status_code))
 
     def on_response(self, response):
         i = 0
@@ -88,6 +101,26 @@ def toot_on_mastodon(tweet, media_ids):
     except Exception as e:
         print('Error: {}'.format(e))
 
+def send_email_on_errors(err_msg):
+    # Create a secure SSL context
+    context = ssl.create_default_context()
+    sender_mail = EMAIL_ADDRESS
+    receiver_mail = EMAIL_ADDRESS
+    message = """\
+Subject: Something went wrong with the stream!
+
+
+This email is coming from mastodon server.
+{}
+""".format(err_msg)
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
+        try:
+            server.login(EMAIL_ADDRESS, EMAIL_APP_PW)
+            server.sendmail(sender_mail, receiver_mail, message)
+        except Exception as e:
+            print(e)
+
 
 if __name__ == '__main__':
     while True:
@@ -99,3 +132,5 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             #not sure if this is a correct way to stop the stream
             break
+        except:
+            continue
