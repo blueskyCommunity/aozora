@@ -67,10 +67,6 @@ class MyStreamer(tweepy.StreamingClient):
         toot_on_mastodon(response.data, media_ids)
         return super().on_response(response)
 
-    def on_request_error(self, status_code):
-        print(status_code)
-        return super().on_request_error(status_code)
-
 
 def upload_media_to_mastodon(media_files):
     files_root = Path("/home/tuna/Downloads/tweetpics/")
@@ -125,7 +121,7 @@ This email is coming from mastodon server.
 if __name__ == '__main__':
     while True:
         try:
-            streamer = MyStreamer(TWITTER_BEARER_TOKEN)
+            streamer = MyStreamer(TWITTER_BEARER_TOKEN, wait_on_rate_limit=True)
             # rules are managed from a different script
             # streamer.add_rules(tweepy.StreamRule("from:dSocialCommons_ -is:retweet"))
             streamer.filter(expansions=['attachments.media_keys'], media_fields=['url','preview_image_url'])
