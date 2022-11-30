@@ -32,3 +32,8 @@ TMTP has two major goals:
 Unlike most messaging protocols, TMTP does not define a universal identity scheme, 
 but can leverage any third party identity or authentication credential for registration/login.
 
+### Handshake
+
+Contrary to popular belief, the DNS (Domain Name System) is quite decentralized and resilient. Unfortunately, certificate authorities made themselves middlemen and have been prone to hacks and general disruption to the internet at large.
+
+[Handshake](https://handshake.org) fixes this by moving security to the blockchain and existing protocols like DANE and DNSSEC. As a P2P naming system that sits atop the DNS, Handshake is well suited to be the infrastrucutre for the next stage of the internet, while preserving existing functionality with how the web works today — in other words, Web2 domains still work. Interoperability is the key to widespread usage.
