@@ -1,36 +1,34 @@
-bluesky blockchain / crypto / $ links etc
+# blockchain related
 
-***getting started ***
+## [Akash](https://akash.network)
+Censorship-resistant, permissionless, and self-sovereign open source cloud.
 
-we may add details per this template:
+## [Deep DAO](https://deepdao.io)
+DAO ecosystem overview
 
-method: [keybase, pgp, oauth etc]
-underlying tech: [blockchain, keypairs, etc]
-used-by: [fediverse, ssb, twitter, etc]
-approx num users: [+/- order of magnitude]
-reasons: [for use/not use]
-requests: [what would be good to do next with this method]
+## [eosio](https://eos.io)
+Open-source blockchain platform, built to support and operate safe, compliant, and predictable digital infrastructures.
 
-https://onflow.org blockchain built for next generation of apps, games, and the digital assets that power them
+## [The Graph](https://thegraph.com)
+Indexing protocol for querying networks like Ethereum and IPFS.
 
-https://thegraph.com/ indexing protocol for querying networks like Ethereum and IPFS - currently supports 24 network
+## [Handshake](https://handshake.org)
+Decentralized naming and certificate authority
 
-https://www.substrate.io - blockchain building blocks
+## [Onflow](https://onflow.org)
+Blockchain built for next generation of apps, games, and the digital assets that power them.
 
-https://proofofhumanity.id - system combining webs of trust, with reverse Turing tests, and dispute resolution to create a sybil-proof list of humans
+## [Proof of Humanity](https://proofofhumanity.id)
+System combining webs of trust, with reverse Turing tests, and dispute resolution to create a sybil-proof list of humans.
 
-https://app.posta.earth microblogging for proof of humanity
+## [Reddcoin](https://reddcoin.com)
+Social currency
 
-https://eos.io open-source blockchain platform, built to support and operate safe, compliant, and predictable digital infrastructures
+## [Substrate](https://substrate.io)
+Blockchain building blocks
 
-https://akash.network censorship-resistant, permissionless, and self-sovereign open source cloud
+## [Twetch](https://twetch.com)
+Social network that puts each post, like, follow, &c into a signed Bitcoin transaction.
 
-https://getzion.com - social network built on btc
-
-https://twetch.app social network that puts each post, like, follow etc into a signed bitcoin transaction 
-
-https://reddcoin.com - social currency
-
-https://deepdao.io dao ecosystem overview
-
-
+## [Zion](https://www.zion.fyi)
+Social network built on BTC
